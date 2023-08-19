@@ -39,7 +39,7 @@ stage ("Push to Docker HUB") {
 		withDockerRegistry(credentialsId: 'DockerHub', url: ") {
 		// some block
 		sh "docker push dedengoma/tomcat-1:latest"
-			}
+			 }
             }
         }
 }
