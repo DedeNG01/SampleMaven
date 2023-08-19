@@ -26,7 +26,7 @@ stage ('delete the existing image') {
         }
 stage ("Build the Docker Image") {
             steps {
-                sh "docker build. -t deden01/tomcat-1"
+                sh "docker build . -t deden01/tomcat-1"
             }
         }
 stage ("Run the Container") {
