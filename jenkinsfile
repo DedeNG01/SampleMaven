@@ -26,19 +26,19 @@ stage ('delete the existing image') {
         }
 stage ("Build the Docker Image") {
             steps {
-                sh "docker build. -t dedengoma/tomcat-1"
+                sh "docker build. -t deden01/tomcat-1"
             }
         }
 stage ("Run the Container") {
             steps {
-                sh "docker run -d -p 90:8080 --name cont01 dedengoma/tomcat-1"
+                sh "docker run -d -p 90:8080 --name cont01 deden01/tomcat-1"
             }
         }
 stage ("Push to Docker HUB") {
             steps {
 		withDockerRegistry(credentialsId: 'DockerHub', url: ") {
 		// some block
-		sh "docker push dedengoma/tomcat-1:latest"
+		sh "docker push deden01/tomcat-1:latest"
 			 }
             }
         }
