@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'Java' }
+    agent {label 'WN-01'}
     stages { 
         stage ("SCM Checkin-1") {
             steps {
