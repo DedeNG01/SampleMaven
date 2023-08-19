@@ -3,7 +3,7 @@ pipeline {
     stages { 
         stage ("SCM Checkin-1") {
             steps {
-              git branch: 'master', url: 'https://github.com/Vishwanathms/SampleMaven'
+              git branch: 'master', url: 'https:github.com/DedeNG01/SampleMaven/'
             }
         }
         stage ("maven build") {
@@ -17,7 +17,7 @@ pipeline {
         }
 stage ("Build the Docker Image") {
             steps {
-                sh "docker build . -t vishwacloudlab/tomcat-1"
+                sh "docker build . -t dedengomalab/tomcat-1"
             }
         }
 stage ("Run the Container") {
