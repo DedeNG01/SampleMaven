@@ -36,7 +36,7 @@ stage ("Run the Container") {
         }
 stage ("Push to Docker HUB") {
             steps {
-		    	       withDockerRegistry(credentialsId: 'DockerHub', url:"https://hub.docker.com") {
+		    	       withDockerRegistry(credentialsId: 'DockerHub', url:"https://hub.docker.com/repositories/deden01") {
 			       // some block
 			       sh "docker push deden01/tomcat-1:latest"
 			       } 
