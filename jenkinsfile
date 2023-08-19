@@ -8,7 +8,7 @@ pipeline {
         }
         stage ("maven build") {
             tools {
-                maven 'mavenLatest'
+                maven 'maven-latest'
                 jdk 'jdk11'
             }
             steps {
